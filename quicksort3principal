@@ -1,0 +1,18 @@
+package quicksort2;
+import java.util.Arrays;
+import quicksort.QuickSort;
+public class Principal {
+		public static void main(String[] args) {
+			int[] lista = {99, 98, 97, 96, 95, 94, 93, 92, 91};
+
+			System.out.println("Lista inicial:");
+			System.out.println(Arrays.toString(lista));
+
+			QuickSort qSort = new QuickSort();
+			qSort.quickSort(lista, 0, lista.length - 1);
+
+			System.out.println("Lista ordenada:");
+			System.out.print(Arrays.toString(lista));
+
+		}
+	}
