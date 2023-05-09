@@ -1,0 +1,11 @@
+public class Digito {
+	public Digito() {
+		super();
+	}
+	public  int Quantdig( int num) {
+		if (num >-10 && num < 10) {
+				return 1;
+		} else {
+			return 1 + Quantdig(num/10);
+		}
+}
