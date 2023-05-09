@@ -1,0 +1,24 @@
+package Controller;
+public class Vezes {
+private int qd=0;
+	public Vezes() {
+		super ();
+		}
+public int Quantidade (int num1, int num2) {
+		int div;
+		int rest;
+		if (num1 == num2) {
+			return 1;
+		} else  if (num1 <10) {
+		return 0;
+	} else {
+		 rest = num1%10;
+		div=num1/10;
+		if(rest == num2) {
+		qd = 1; 
+		} else {
+			qd=0;
+		}
+	}
+return qd + Quantidade(div,num2);
+}
