@@ -1,0 +1,12 @@
+package view;
+import Controller;
+
+public class Principal {
+	public static void main(String[] args) {
+		int num1= (int)((Math.random()*999999)+10);// numero qualquer 
+		int num2 = (int)((Math.random()*9)+0);//divisor qualquer 
+		Vezes v = new Vezes();
+		int qd = v.Qd(num1, num2);
+		System.out.println("O número: " + num1 + " A quantidade de vezes que  "+ num2+ " aparece é: "+ qd);
+	}
+}
