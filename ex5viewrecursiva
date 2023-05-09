@@ -1,0 +1,10 @@
+package view;
+import Controller;
+public class Principal {
+	public static void main(String[] args) {
+		int num = (int)((Math.random()*-1000)+1);
+		Digito d = new Digito ();
+		int qdig = d.Qdig(num);
+		System.out.println("A quantidade de digito do " + num +"  = "+ qdig);
+	}
+}
