@@ -1,0 +1,15 @@
+package controller;
+public class Soma {
+	public Soma() {
+		super();
+		}
+public int Somar(int valor) {
+	if(valor < 0) {
+		return 0;
+	} else if (valor == 0) {
+		return 0;
+	} else {
+		return  valor + Somar (valor - 1);
+	}
+}
+}
