@@ -1,0 +1,15 @@
+package controller;
+public class Negativo {
+	public Negativo() {
+		super();
+	}
+	public int QuantidadeNeg(int []vt,int num) {
+		if(num==0) {
+			return 0;
+		} else if (vt[num-1]<0) {
+			return 1 + QuantidadeNeg(vt, num -1);
+		}else {
+			return QuantidadeNeg(vt, num-1);
+		}
+	}
+}
